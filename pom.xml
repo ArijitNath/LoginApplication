@@ -23,7 +23,7 @@
 	      <uniqueVersion>false</uniqueVersion>
 	      <id>loginapplication</id>
 	      <name>Login Application</name>
-	      <url>file://{$PROJECT_HOME}/LoginApplication/target/</url>
+	      <url>file:///home/arijit/Documents/EmployeeAnalytics/LoginApplication/target/</url>
 	      <layout>default</layout>
 	    </repository>
 	</distributionManagement>
