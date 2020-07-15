@@ -19,5 +19,10 @@ public class AuthenticationRequest {
 
 	public AuthenticationRequest() {
 		super();
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "AuthenticationRequest [userName=" + userName + ", password=" + password + "]";
+	}
 }

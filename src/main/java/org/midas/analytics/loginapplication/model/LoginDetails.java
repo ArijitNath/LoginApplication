@@ -5,19 +5,18 @@ import java.util.Date;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Table(value = "loginDetails")
 public class LoginDetails {
 	
 	@PrimaryKey
-	private String loginId;
 	private String loginUserName;
 	private String loginEmailID;
 	private String loginPassword;
+	
+	@JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
 	private Date lastLoginTime;
-	
-	public String getLoginId() { return loginId; }
-	
-	public void setLoginId(String loginId) { this.loginId = loginId; }
 	
 	public String getLoginUserName() { return loginUserName; }
 	
