@@ -3,7 +3,7 @@ pipeline {
     stages {
     	stage("Build") {
             steps {
-                sh "./x.sh"
+                sh "sudo ./x.sh"
             }
         }
         stage("Build and start test image") {
