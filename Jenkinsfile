@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+    	stage("Build") {
+            steps {
+                sh "./x.sh"
+            }
+        }
         stage("Build and start test image") {
             steps {
                 sh "docker-compose up --build"
