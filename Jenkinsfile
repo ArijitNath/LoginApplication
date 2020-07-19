@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage("Build and start test image") {
+        stage("Build and start Midas image") {
             steps {
-                sh "docker-compose up --build"
+                sh "docker-compose up --build -d"
             }
         }
     }
