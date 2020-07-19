@@ -17,8 +17,9 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
+                echo "Deploying Login Application..."
                 withMaven(maven : 'maven_3_6_3') {
-          			sh ''
+          			sh 'mvn deploy'
           		} 
             }
         }
