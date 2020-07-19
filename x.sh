@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mvn clean deploy 
+sudo mvn clean deploy 
