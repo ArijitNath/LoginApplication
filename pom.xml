@@ -23,10 +23,21 @@
 	      <uniqueVersion>false</uniqueVersion>
 	      <id>loginapplication</id>
 	      <name>Login Application</name>
-	      <url>file:///home/arijit/Documents/EmployeeAnalytics/LoginApplication/target/</url>
+	      <url>file://${PROJECT_HOME}/LoginApplication/target/</url>
 	      <layout>default</layout>
 	    </repository>
 	</distributionManagement>
+	
+	
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>1.0.0</id>
+			<url>file://${PROJECT_HOME}/Executioner/LoginApplication/target/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	
 
 	<dependencies>
 		<dependency>
@@ -76,8 +87,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
-		
 	</dependencies>
 
 	<build>
@@ -88,5 +97,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
