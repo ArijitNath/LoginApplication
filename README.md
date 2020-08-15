@@ -1,2 +1,2 @@
 # LoginApplication
-Login Application for Midas Project
+Login Application for Employee Analytics Project
