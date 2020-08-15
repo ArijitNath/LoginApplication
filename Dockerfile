@@ -1,6 +1,9 @@
 #Base Image
 FROM openjdk:8-jdk-alpine
 
+# Add Maintainer Info
+LABEL maintainer="arijitnath92@gmail.com"
+
 #Port to expose
 EXPOSE 8069
 
@@ -17,4 +20,4 @@ COPY $LOGIN_APPLICATION_JAR $LOGIN_APP_HOME/loginapplication.jar
 WORKDIR $LOGIN_APP_HOME
 
 #Start Command
-ENTRYPOINT ["java","-jar","loginapplication.jar"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar","loginapplication.jar"]

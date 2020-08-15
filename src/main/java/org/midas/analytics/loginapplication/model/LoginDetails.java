@@ -2,15 +2,9 @@ package org.midas.analytics.loginapplication.model;
 
 import java.util.Date;
 
-import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-import org.springframework.data.cassandra.core.mapping.Table;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Table(value = "loginDetails")
 public class LoginDetails {
-	
-	@PrimaryKey
 	private String loginUserName;
 	private String loginEmailID;
 	private String loginPassword;
@@ -32,5 +26,6 @@ public class LoginDetails {
 	
 	public Date getLastLoginTime() { return lastLoginTime; }
 	
-	public void setLastLoginTime(Date lastLoginTime) { this.lastLoginTime = lastLoginTime; }	
+	public void setLastLoginTime(Date lastLoginTime) { this.lastLoginTime = lastLoginTime; }
+	
 }
