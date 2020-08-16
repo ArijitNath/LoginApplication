@@ -24,7 +24,7 @@ public class CassandraConnectivityLoginServiceImpl implements CassandraConnectiv
 	private static final String USER_AGENT = "Googlebot";
 	private static final String ACCEPT = "*/*";
 	private static final String CONTENT_TYPE = "application/json";
-	private static final String LOGIN_GET_URL = "http://cassandraconnectivity:8070/midas/cassandra/user/";
+	private static final String LOGIN_GET_URL = "http://cassandraconnectivity:3070/midas/cassandra/login/";
 	private static final Logger LOGGER = Logger.getLogger(CassandraConnectivityLoginServiceImpl.class.getName());
 	
 	private JsonParserUtil jsonParserUtil;

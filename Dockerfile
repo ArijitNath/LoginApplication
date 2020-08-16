@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 LABEL maintainer="arijitnath92@gmail.com"
 
 #Port to expose
-EXPOSE 8069
+EXPOSE 3069
 
 #Env varibale for Working Directory
 ENV LOGIN_APP_HOME /usr/src/app

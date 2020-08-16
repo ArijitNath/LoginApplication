@@ -3,7 +3,7 @@ services:
     loginapplication:
         build: .
         ports: 
-            - "8069:8069"
+            - "3069:3069"
         restart: always
     cassandra:
         image: 'cassandra'
